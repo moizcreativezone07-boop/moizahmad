@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moiz Ahmad — Graphic Designer &amp; Digital Marketing Expert</title>
+<meta name="description" content="Moiz Ahmad is a graphic designer and digital marketing expert crafting logos, video edits, branding and campaigns that make people stop scrolling.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23050816%22/><text x=%2250%22 y=%2262%22 font-size=%2242%22 font-family=%22sans-serif%22 font-weight=%22700%22 fill=%22%2306B6D4%22 text-anchor=%22middle%22>MA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+<canvas id="particleField" aria-hidden="true"></canvas>
+
+<!-- ================= HEADER ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo-mark" aria-label="Moiz Ahmad — Home">
+      <span class="logo-ring"></span>
+      <span class="logo-glyph">MA</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-section="home"><span>Home</span></a>
+      <a href="#expertise" class="nav-link" data-section="expertise"><span>Expertise</span></a>
+      <a href="#projects" class="nav-link" data-section="projects"><span>Projects</span></a>
+      <a href="#about" class="nav-link" data-section="about"><span>About</span></a>
+      <a href="#contact" class="nav-link" data-section="contact"><span>Contact</span></a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="hero-content reveal">
+      <p class="eyebrow">👋 Welcome to My Creative Space</p>
+      <h1 class="hero-title">Hey I'm <span class="text-gradient">Moiz</span></h1>
+
+      <div class="typing-row">
+        <span class="typing-static">I'm a</span>
+        <span class="typing-target" id="typingTarget"></span><span class="typing-cursor" aria-hidden="true"></span>
+      </div>
+
+      <p class="hero-sub">I turn ideas into striking visuals — logos, edits, campaigns and brand stories that make people stop scrolling.</p>
+
+      <a href="https://wa.me/923253248839?text=I%20impressed%20with%20your%20work.%20Please%20send%20me%20your%20portfolio."
+         target="_blank" rel="noopener" class="btn btn-primary btn-float ripple-btn" id="bookMeetingBtn">
+        <span>👍 Book a Meeting</span>
+      </a>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="scroll-hint-line"></span>
+      <span class="scroll-hint-text">Scroll</span>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"><span></span></div>
+
+  <!-- ================= EXPERTISE ================= -->
+ <section id="expertise" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow eyebrow-center">What I Do</span>
+    <h2>My Expertise</h2>
+  </div>
+
+  <div class="expertise-grid">
+
+    <!-- Photoshop -->
+    <article class="glass-card expertise-card reveal">
+      <div class="card-glow"></div>
+
+      <div class="expertise-icon">
+        <img src="photoshop.png" alt="Adobe Photoshop Logo">
+      </div>
+
+      <h3>Photoshop</h3>
+      <p>Over four years of professional experience crafting social media posts, posters, banners, photo manipulation, branding, advertisements, thumbnails and photo editing.</p>
+      <span class="experience-badge">4+ Years Experience</span>
+    </article>
+
+
+    <!-- Adobe Premiere Pro -->
+    <article class="glass-card expertise-card reveal">
+      <div class="card-glow"></div>
+
+      <div class="expertise-icon">
+        <img src="primium1.png" alt="Adobe Premiere Pro Logo">
+      </div>
+
+      <h3>Adobe Premiere Pro</h3>
+      <p>Over four years of experience editing YouTube videos, reels, advertisements, cinematic edits, transitions, subtitles and professional color grading.</p>
+      <span class="experience-badge">4+ Years Experience</span>
+    </article>
+
+
+    <!-- Adobe Illustrator -->
+    <article class="glass-card expertise-card reveal">
+      <div class="card-glow"></div>
+
+      <div class="expertise-icon">
+        <img src="illustrator.png" alt="Adobe Illustrator Logo">
+      </div>
+
+      <h3>Adobe Illustrator</h3>
+      <p>Over three years of experience creating logos, branding systems, vector graphics, business cards and detailed illustrations.</p>
+      <span class="experience-badge">3+ Years Experience</span>
+    </article>
+
+
+    <!-- Figma -->
+    <article class="glass-card expertise-card reveal">
+      <div class="card-glow"></div>
+
+      <div class="expertise-icon">
+        <img src="figma.png" alt="Figma Logo">
+      </div>
+
+      <h3>Figma</h3>
+      <p>Over two years of experience designing responsive websites, UI/UX interfaces, mobile apps, dashboards and landing pages.</p>
+      <span class="experience-badge">2+ Years Experience</span>
+    </article>
+
+
+    <!-- Canva -->
+    <article class="glass-card expertise-card reveal">
+      <div class="card-glow"></div>
+
+      <div class="expertise-icon">
+        <img src="canva.png" alt="Canva Logo">
+      </div>
+
+      <h3>Canva</h3>
+      <p>Over four years of experience creating social media content, presentations, ads, business graphics and marketing designs.</p>
+      <span class="experience-badge">4+ Years Experience</span>
+    </article>
+
+
+    <!-- Blender -->
+    <article class="glass-card expertise-card reveal">
+      <div class="card-glow"></div>
+
+      <div class="expertise-icon">
+        <img src="blender.png" alt="Blender Logo">
+      </div>
+
+      <h3>Blender</h3>
+      <p>One year of dedicated learning experience creating beginner-friendly 3D models, product renders and simple animations.</p>
+      <span class="experience-badge">1 Year Experience</span>
+    </article>
+
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true">
+  <span></span>
+</div>
+
+  <!-- ================= PROJECTS ================= -->
+
+<style>
+
+  /* See All Projects Button - Center */
+.see-more-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#seeAllProjectsBtn {
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+  /* ================================
+     PROJECTS GRID
+  ================================= */
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  /* ================================
+     CUSTOM PROJECT IMAGE
+  ================================= */
+
+  .custom-project-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #111827;
+  }
+
+  .custom-project-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+
+  .project-card:hover .custom-project-image img {
+    transform: scale(1.05);
+  }
+
+  .custom-project-image .mockup-chip {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 5;
+  }
+
+  .project-body {
+    padding: 22px;
+  }
+
+  /* Extra projects hidden initially */
+  .extra-project {
+    display: none;
+  }
+
+  /* Show extra projects after button click */
+  .projects-grid.show-all .extra-project {
+    display: block;
+  }
+
+  .see-more-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  /* Tablet */
+  @media (max-width: 1050px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 650px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .custom-project-image {
+      height: 220px;
+    }
+  }
+</style>
+
+
+<section id="projects" class="section">
+
+  <div class="section-head reveal">
+    <span class="eyebrow eyebrow-center">Works That Speak</span>
+    <h2>Recent Projects</h2>
+  </div>
+
+
+  <!-- STATS -->
+  <div class="stats-row reveal">
+
+    <div class="glass-card stat-card">
+      <div class="card-glow"></div>
+
+      <span class="stat-number" data-count="100">0</span>
+      <span class="stat-plus">+</span>
+
+      <p>Complete Projects</p>
+    </div>
+
+
+    <div class="glass-card stat-card">
+      <div class="card-glow"></div>
+
+      <span class="stat-number" data-count="97">0</span>
+      <span class="stat-plus">%</span>
+
+      <p>Positive Feedback</p>
+    </div>
+
+  </div>
+
+
+  <!-- =====================================
+       PROJECTS
+  ====================================== -->
+
+  <div class="projects-grid" id="projectsGrid">
+
+
+    <!-- ================= PROJECT 1 ================= -->
+
+    <article class="glass-card project-card reveal">
+
+      <div class="card-glow"></div>
+
+      <div class="project-visual custom-project-image">
+
+        <!-- APNI IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+        <img
+          src="Burger Castle.jpeg"
+          alt="Logo Design Project"
+          loading="lazy"
+        >
+
+        <div class="mockup-chip">
+          Branding Suite
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <span class="project-tag">
+          Branding
+        </span>
+
+        <h3>
+          Logo Design
+        </h3>
+
+        <p>
+          A premium branding presentation including logo,
+          business card, packaging, brand mockups and
+          complete presentation design.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- ================= PROJECT 2 ================= -->
+
+    <article class="glass-card project-card reveal">
+
+      <div class="card-glow"></div>
+
+      <div class="project-visual custom-project-image">
+
+        <!-- APNI IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+        <img
+          src="Video Editing Timeline.jpeg"
+          alt="Cinematic Video Editing Project"
+          loading="lazy"
+        >
+
+        <div class="mockup-chip">
+          Timeline Edit
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <span class="project-tag">
+          Video Editing
+        </span>
+
+        <h3>
+          Cinematic Edit Suite
+        </h3>
+
+        <p>
+          Professional Premiere Pro editing with
+          cinematic transitions, motion graphics,
+          color grading and sound design.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- ================= PROJECT 3 ================= -->
+
+    <article class="glass-card project-card reveal">
+
+      <div class="card-glow"></div>
+
+      <div class="project-visual custom-project-image">
+
+        <!-- APNI IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+        <img
+          src="Growth Dashboard.jpeg"
+          alt="Marketing Dashboard Project"
+          loading="lazy"
+        >
+
+        <div class="mockup-chip">
+          Growth +64%
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <span class="project-tag">
+          Digital Marketing
+        </span>
+
+        <h3>
+          Growth Dashboard
+        </h3>
+
+        <p>
+          Marketing dashboard, analytics graph and
+          growth chart designed for campaign performance
+          and client reporting.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- ================= PROJECT 4 ================= -->
+
+    <article class="glass-card project-card reveal">
+
+      <div class="card-glow"></div>
+
+      <div class="project-visual custom-project-image">
+
+        <!-- APNI IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+        <img
+          src="Thumbnail.jpg"
+          alt="YouTube Thumbnail Project"
+          loading="lazy"
+        >
+
+        <div class="mockup-chip">
+          High CTR
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <span class="project-tag">
+          Thumbnail Design
+        </span>
+
+        <h3>
+          YouTube Thumbnail
+        </h3>
+
+        <p>
+          Professional and modern thumbnail designs
+          created to improve visual appeal and
+          click-through rate.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- ================= PROJECT 5 ================= -->
+
+    <article class="glass-card project-card reveal">
+
+      <div class="card-glow"></div>
+
+      <div class="project-visual custom-project-image">
+
+        <!-- APNI IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+        <img
+          src="Branding.jpeg"
+          alt="Visual Identity Project"
+          loading="lazy"
+        >
+
+        <div class="mockup-chip">
+          Identity
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <span class="project-tag">
+          Branding
+        </span>
+
+        <h3>
+          Visual Identity System
+        </h3>
+
+        <p>
+          Complete visual identity system including
+          logo variations, typography, colors and
+          brand guidelines.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- ================= PROJECT 6 ================= -->
+
+    <article class="glass-card project-card reveal">
+
+      <div class="card-glow"></div>
+
+      <div class="project-visual custom-project-image">
+
+        <!-- APNI IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+        <img
+          src="s.png"
+          alt="Short Form Reel Project"
+          loading="lazy"
+        >
+
+        <div class="mockup-chip">
+          Reel Cut
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <span class="project-tag">
+          Video Editing
+        </span>
+
+        <h3>
+          Short-Form Reel Pack
+        </h3>
+
+        <p>
+          Fast-paced reels with motion titles,
+          sound design, transitions and
+          platform-ready exports.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- =================================================
+         EXTRA PROJECTS
+         YE 6 PROJECTS KE BAAD HIDDEN RAHENGE
+    ================================================== -->
+
+
+    <!-- ================= PROJECT 7 ================= -->
+
+    <article class="glass-card project-card extra-project">
+
+      <div class="card-glow"></div>
+
+      <div class="project-visual custom-project-image">
+
+        <!-- APNI IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+        <img
+          src="ad.png"
+          alt="Ad Campaign Project"
+          loading="lazy"
+        >
+
+        <div class="mockup-chip">
+          ROAS 3.8x
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <span class="project-tag">
+          Digital Marketing
+        </span>
+
+        <h3>
+          Ad Campaign Report
+        </h3>
+
+        <p>
+          Full-funnel advertising strategy with
+          creative testing and weekly performance
+          reporting.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- ================= PROJECT 8 ================= -->
+
+   <!-- GOOGLE ADS - EXTRA PROJECT -->
+
+<article class="glass-card project-card extra-project">
+
+  <div class="card-glow"></div>
+
+  <div class="project-visual custom-project-image">
+
+    <!-- APNI GOOGLE ADS IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+    <img
+      src="ads.png"
+      alt="Google Ads Campaign Project"
+      loading="lazy"
+    >
+
+    <div class="mockup-chip">
+      Google Ads
+    </div>
+
+  </div>
+
+  <div class="project-body">
+
+    <span class="project-tag">
+      Digital Marketing
+    </span>
+
+    <h3>
+      Google Ads Campaign
+    </h3>
+
+    <p>
+      Targeted Google Ads campaigns designed to reach the right audience,
+      increase website traffic, generate quality leads and improve
+      advertising performance through strategic keyword targeting,
+      campaign optimization and conversion-focused strategies.
+    </p>
+
+  </div>
+
+</article>
+
+
+    <!-- ================= PROJECT 9 ================= -->
+
+    <article class="glass-card project-card extra-project">
+
+      <div class="card-glow"></div>
+
+      <div class="project-visual custom-project-image">
+
+        <!-- APNI IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+        <img
+          src="Packaging.jpeg"
+          alt="Packaging Concept Project"
+          loading="lazy"
+        >
+
+        <div class="mockup-chip">
+          Packaging
+        </div>
+
+      </div>
+
+      <div class="project-body">
+
+        <span class="project-tag">
+          Branding
+        </span>
+
+        <h3>
+          Packaging Concept
+        </h3>
+
+        <p>
+          Product packaging concept designed for
+          stronger shelf presence and brand recall.
+        </p>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- ================= PROJECT 10 ================= -->
+
+    <!-- =========================================
+     ELEVENLABS PROFESSIONAL AUDIO GENERATOR
+     WITH CUSTOM AUDIO PLAYER
+========================================= -->
+
+<style>
+
+  /* =========================================
+     ELEVENLABS AUDIO PLAYER
+  ========================================= */
+
+  .eleven-audio-player {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 9px 13px 9px 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50px;
+
+    background: rgba(10, 15, 30, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+      0 8px 30px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    z-index: 10;
+
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+
+  .eleven-audio-player:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(99, 102, 241, 0.55);
+
+    box-shadow:
+      0 12px 35px rgba(0, 0, 0, 0.4),
+      0 0 25px rgba(99, 102, 241, 0.15);
+  }
+
+
+  /* =========================================
+     PLAY BUTTON
+  ========================================= */
+
+  .eleven-play-btn {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+      135deg,
+      #6366f1,
+      #8b5cf6
+    );
+
+    box-shadow:
+      0 5px 18px rgba(99, 102, 241, 0.35);
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+
+  .eleven-play-btn:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+      0 7px 24px rgba(99, 102, 241, 0.55);
+  }
+
+
+  .eleven-play-btn:active {
+    transform: scale(0.94);
+  }
+
+
+  /* PLAY ICON */
+
+  .eleven-play-icon {
+    width: 0;
+    height: 0;
+
+    margin-left: 3px;
+
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid white;
+  }
+
+
+  /* PAUSE ICON */
+
+  .eleven-pause-icon {
+    width: 12px;
+    height: 14px;
+
+    position: relative;
+  }
+
+
+  .eleven-pause-icon::before,
+  .eleven-pause-icon::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    width: 4px;
+    height: 14px;
+
+    border-radius: 2px;
+
+    background: white;
+  }
+
+
+  .eleven-pause-icon::before {
+    left: 0;
+  }
+
+
+  .eleven-pause-icon::after {
+    right: 0;
+  }
+
+
+  /* =========================================
+     PLAYER INFO
+  ========================================= */
+
+  .eleven-audio-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    min-width: 120px;
+  }
+
+
+  .eleven-audio-title {
+    font-size: 11px;
+    font-weight: 600;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    white-space: nowrap;
+  }
+
+
+  /* =========================================
+     PROGRESS BAR
+  ========================================= */
+
+  .eleven-progress {
+    position: relative;
+
+    width: 120px;
+    height: 4px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    cursor: pointer;
+  }
+
+
+  .eleven-progress-bar {
+    width: 0%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+      90deg,
+      #6366f1,
+      #06b6d4
+    );
+
+    transition: width 0.08s linear;
+  }
+
+
+  /* =========================================
+     TIME
+  ========================================= */
+
+  .eleven-audio-time {
+    font-size: 9px;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    white-space: nowrap;
+  }
+
+
+  /* =========================================
+     MOBILE
+  ========================================= */
+
+  @media (max-width: 650px) {
+
+    .eleven-audio-player {
+      left: 12px;
+      bottom: 12px;
+
+      padding: 7px 10px 7px 7px;
+
+      gap: 9px;
+    }
+
+
+    .eleven-play-btn {
+      width: 34px;
+      height: 34px;
+    }
+
+
+    .eleven-audio-info {
+      min-width: 100px;
+    }
+
+
+    .eleven-progress {
+      width: 100px;
+    }
+
+  }
+
+</style>
+
+
+<!-- =========================================
+     ELEVENLABS PROJECT
+========================================= -->
+
+<article class="glass-card project-card extra-project">
+
+  <div class="card-glow"></div>
+
+
+  <!-- PROJECT IMAGE -->
+
+  <div class="project-visual custom-project-image">
+
+    <!--
+      APNI CUSTOM IMAGE KA PATH / URL YAHAN PASTE KAREIN
+
+      Example:
+      ./assets/projects/elevenlabs.jpg
+    -->
+
+    <img
+      src="aud.png"
+      alt="ElevenLabs Professional Audio Generator Project"
+      loading="lazy"
+    >
+
+
+    <!-- PROJECT CHIP -->
+
+    <div class="mockup-chip">
+      ElevenLabs
+    </div>
+
+
+    <!-- =====================================
+         CUSTOM AUDIO PLAYER
+    ====================================== -->
+
+    <div class="eleven-audio-player">
+
+
+      <!-- PLAY / PAUSE BUTTON -->
+
+      <button
+        class="eleven-play-btn"
+        type="button"
+        aria-label="Play ElevenLabs audio"
+      >
+
+        <span class="eleven-play-icon"></span>
+
+      </button>
+
+
+      <!-- AUDIO INFORMATION -->
+
+      <div class="eleven-audio-info">
+
+        <div class="eleven-audio-title">
+          Professional Audio
+        </div>
+
+
+        <!-- PROGRESS -->
+
+        <div class="eleven-progress">
+
+          <div class="eleven-progress-bar"></div>
+
+        </div>
+
+
+        <!-- TIME -->
+
+        <div class="eleven-audio-time">
+          0:00 / 0:00
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--
+      =================================================
+      AUDIO FILE
+
+      APNI AUDIO FILE KA PATH YAHAN PASTE KAREIN
+
+      Example:
+      ./assets/audio/elevenlabs.mp3
+
+      =================================================
+    -->
+
+    <audio
+      class="eleven-audio"
+      preload="metadata"
+      src="Eleven Labs For Portfolio .mp3"
+    ></audio>
+
+  </div>
+
+
+  <!-- =========================================
+       PROJECT CONTENT
+  ========================================== -->
+
+  <div class="project-body">
+
+    <span class="project-tag">
+      AI Audio & Voice
+    </span>
+
+
+    <h3>
+      Professional Audio Generator
+    </h3>
+
+
+    <p>
+      Professional AI-powered audio and voice generation
+      for creating natural-sounding voiceovers, narration,
+      promotional content, social media videos and high-quality
+      digital audio experiences.
+    </p>
+
+  </div>
+
+</article>
+
+
+<!-- =========================================
+     AUDIO PLAYER JAVASCRIPT
+========================================= -->
+
+<script>
+
+  document.querySelectorAll(".eleven-audio-player").forEach(function(player) {
+
+    const button =
+      player.querySelector(".eleven-play-btn");
+
+    const audio =
+      player.parentElement.querySelector(".eleven-audio");
+
+    const progress =
+      player.querySelector(".eleven-progress");
+
+    const progressBar =
+      player.querySelector(".eleven-progress-bar");
+
+    const time =
+      player.querySelector(".eleven-audio-time");
+
+    const icon =
+      player.querySelector(".eleven-play-btn span");
+
+
+    /* ================================
+       FORMAT TIME
+    ================================= */
+
+    function formatTime(seconds) {
+
+      if (!isFinite(seconds)) {
+        return "0:00";
+      }
+
+      const minutes =
+        Math.floor(seconds / 60);
+
+      const secondsRemaining =
+        Math.floor(seconds % 60)
+        .toString()
+        .padStart(2, "0");
+
+      return minutes + ":" + secondsRemaining;
+
+    }
+
+
+    /* ================================
+       PLAY / PAUSE
+    ================================= */
+
+    button.addEventListener("click", function() {
+
+      if (audio.paused) {
+
+        /* Stop other audio players */
+
+        document.querySelectorAll(".eleven-audio").forEach(function(otherAudio) {
+
+          if (otherAudio !== audio) {
+            otherAudio.pause();
+          }
+
+        });
+
+
+        audio.play();
+
+      } else {
+
+        audio.pause();
+
+      }
+
+    });
+
+
+    /* ================================
+       PLAYING
+    ================================= */
+
+    audio.addEventListener("play", function() {
+
+      icon.className =
+        "eleven-pause-icon";
+
+    });
+
+
+    /* ================================
+       PAUSED
+    ================================= */
+
+    audio.addEventListener("pause", function() {
+
+      icon.className =
+        "eleven-play-icon";
+
+    });
+
+
+    /* ================================
+       PROGRESS
+    ================================= */
+
+    audio.addEventListener("timeupdate", function() {
+
+      if (!audio.duration) {
+        return;
+      }
+
+
+      const percentage =
+        (audio.currentTime / audio.duration) * 100;
+
+
+      progressBar.style.width =
+        percentage + "%";
+
+
+      time.textContent =
+        formatTime(audio.currentTime)
+        + " / "
+        + formatTime(audio.duration);
+
+    });
+
+
+    /* ================================
+       AUDIO LOADED
+    ================================= */
+
+    audio.addEventListener("loadedmetadata", function() {
+
+      time.textContent =
+        "0:00 / "
+        + formatTime(audio.duration);
+
+    });
+
+
+    /* ================================
+       CLICK PROGRESS BAR
+    ================================= */
+
+    progress.addEventListener("click", function(event) {
+
+      if (!audio.duration) {
+        return;
+      }
+
+
+      const rect =
+        progress.getBoundingClientRect();
+
+
+      const clickPosition =
+        event.clientX - rect.left;
+
+
+      const percentage =
+        clickPosition / rect.width;
+
+
+      audio.currentTime =
+        percentage * audio.duration;
+
+    });
+
+
+    /* ================================
+       AUDIO ENDED
+    ================================= */
+
+    audio.addEventListener("ended", function() {
+
+      progressBar.style.width = "0%";
+
+      time.textContent =
+        "0:00 / "
+        + formatTime(audio.duration);
+
+      icon.className =
+        "eleven-play-icon";
+
+    });
+
+  });
+
+</script>
+<!-- AI PROMPT WRITING EXPERT - EXTRA PROJECT -->
+
+<article class="glass-card project-card extra-project">
+
+  <div class="card-glow"></div>
+
+  <div class="project-visual custom-project-image">
+
+    <!-- APNI CUSTOM IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+    <img
+      src="ai.png"
+      alt="AI Prompt Writing Expert Project"
+      loading="lazy"
+    >
+
+    <div class="mockup-chip">
+      AI Prompt Engineering
+    </div>
+
+  </div>
+
+  <div class="project-body">
+
+    <span class="project-tag">
+      AI & Prompt Engineering
+    </span>
+
+    <h3>
+      AI Prompt Writing Expert
+    </h3>
+
+    <p>
+      Expert prompt writing and optimization for AI tools,
+      creating clear, structured and highly effective prompts
+      for text, image, video, audio, coding, research and
+      productivity workflows across different AI platforms.
+    </p>
+
+  </div>
+
+</article><!-- BRAND IDENTITY - EXTRA PROJECT -->
+
+<article class="glass-card project-card extra-project">
+
+  <div class="card-glow"></div>
+
+  <div class="project-visual custom-project-image">
+
+    <!-- APNI CUSTOM BRAND IDENTITY IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+    <img
+      src="ind.png"
+      alt="Brand Identity Design Project"
+      loading="lazy"
+    >
+
+    <div class="mockup-chip">
+      Brand Identity
+    </div>
+
+  </div>
+
+  <div class="project-body">
+
+    <span class="project-tag">
+      Branding & Identity
+    </span>
+
+    <h3>
+      Brand Identity Design
+    </h3>
+
+    <p>
+      Complete brand identity design including logo concepts,
+      color palettes, typography, visual guidelines, brand
+      assets and a consistent visual system that builds a
+      strong and memorable brand presence.
+    </p>
+
+  </div>
+
+</article>
+
+
+<!-- PORTFOLIO MAKING - EXTRA PROJECT -->
+
+<article class="glass-card project-card extra-project">
+
+  <div class="card-glow"></div>
+
+  <div class="project-visual custom-project-image">
+
+    <!-- APNI CUSTOM PORTFOLIO IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+    <img
+      src="port.png"
+      alt="Professional Portfolio Website Project"
+      loading="lazy"
+    >
+
+    <div class="mockup-chip">
+      Portfolio Website
+    </div>
+
+  </div>
+
+  <div class="project-body">
+
+    <span class="project-tag">
+      Web Design & Development
+    </span>
+
+    <h3>
+      Professional Portfolio Making
+    </h3>
+
+    <p>
+      Modern and responsive portfolio websites designed to
+      showcase skills, services, projects and professional
+      experience with a clean visual layout, smooth animations
+      and an engaging user experience.
+    </p>
+
+  </div>
+
+</article>
+
+<!-- TYPOGRAPHY DESIGN - EXTRA PROJECT -->
+
+<article class="glass-card project-card extra-project">
+
+  <div class="card-glow"></div>
+
+  <div class="project-visual custom-project-image">
+
+    <!-- APNI CUSTOM TYPOGRAPHY IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+    <img
+      src="Typography - Copy.jpeg"
+      alt="Typography Design Project"
+      loading="lazy"
+    >
+
+    <div class="mockup-chip">
+      Typography
+    </div>
+
+  </div>
+
+  <div class="project-body">
+
+    <span class="project-tag">
+      Graphic Design
+    </span>
+
+    <h3>
+      Typography Design
+    </h3>
+
+    <p>
+      Creative typography compositions combining custom lettering,
+      font selection, spacing, hierarchy and visual styling to
+      create bold, readable and visually engaging designs for
+      branding, posters, social media and digital content.
+    </p>
+
+  </div>
+
+</article>
+
+<!-- PCB LAYOUT DESIGN - EXTRA PROJECT -->
+
+<article class="glass-card project-card extra-project">
+
+  <div class="card-glow"></div>
+
+  <div class="project-visual custom-project-image">
+
+    <!-- APNI CUSTOM PCB IMAGE KA PATH / URL YAHAN PASTE KAREIN -->
+    <img
+      src="PCB layout Design.jpeg"
+      alt="PCB Layout Design Project"
+      loading="lazy"
+    >
+
+    <div class="mockup-chip">
+      PCB Layout
+    </div>
+
+  </div>
+
+  <div class="project-body">
+
+    <span class="project-tag">
+      PCB Design
+    </span>
+
+    <h3>
+      PCB Layout Design
+    </h3>
+
+    <p>
+      Professional PCB layout design focused on component placement,
+      circuit routing, board organization and optimized layouts
+      for reliable and efficient electronic product development.
+    </p>
+
+  </div>
+
+</article>
+  <!-- =========================
+       SEE ALL BUTTON
+  ========================== -->
+
+  <div class="see-more-wrap reveal">
+
+    <button
+      class="btn btn-outline"
+      id="seeAllProjectsBtn"
+      type="button"
+    
+    >
+      <span id="seeAllProjectsText">
+        See All Projects
+      </span>
+    </button>
+
+  </div>
+
+</section>
+
+
+<div class="section-divider" aria-hidden="true">
+  <span></span>
+</div>
+
+
+
+<!-- =========================================
+     SEE ALL PROJECTS JAVASCRIPT
+========================================= -->
+
+<script>
+
+  const seeAllProjectsBtn =
+    document.getElementById("seeAllProjectsBtn");
+
+  const seeAllProjectsText =
+    document.getElementById("seeAllProjectsText");
+
+  const projectsGrid =
+    document.getElementById("projectsGrid");
+
+
+  seeAllProjectsBtn.addEventListener("click", function () {
+
+    projectsGrid.classList.toggle("show-all");
+
+
+    if (projectsGrid.classList.contains("show-all")) {
+
+      seeAllProjectsText.textContent =
+        "Show Less";
+
+    } else {
+
+      seeAllProjectsText.textContent =
+        "See All Projects";
+
+      document.getElementById("projects").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+    }
+
+  });
+
+</script>
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section about-section">
+    <div class="about-top reveal">
+      <div class="about-logo">
+        <span class="about-logo-ring"></span>
+        <span class="about-logo-glyph">MA</span>
+      </div>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-tabs reveal">
+      <button class="tab-btn glass-card active" data-tab="biography">Biography</button>
+      <button class="tab-btn glass-card" data-tab="skills">Skills</button>
+      <button class="tab-btn glass-card" data-tab="education">Education</button>
+    </div>
+
+    <div class="tab-panels reveal">
+
+      <div class="tab-panel active" id="panel-biography">
+        <div class="bio-grid">
+          <div class="bio-item"><span class="bio-label">Name</span><span class="bio-value">Moiz Ahmad</span></div>
+          <div class="bio-item"><span class="bio-label">Birthday</span><span class="bio-value">8 August 2010</span></div>
+          <div class="bio-item"><span class="bio-label">Age</span><span class="bio-value">16 Years</span></div>
+          <div class="bio-item"><span class="bio-label">Address</span><span class="bio-value">Okara, Pakistan</span></div>
+          <div class="bio-item"><span class="bio-label">Phone</span><span class="bio-value">0325 3248839</span></div>
+          <div class="bio-item"><span class="bio-label">Status</span><span class="bio-value status-live">Freelance Available</span></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-skills">
+        <div class="skills-list">
+          <div class="skill-row" data-percent="98"><span class="skill-name">Photoshop</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-percent">0%</span></div>
+          <div class="skill-row" data-percent="95"><span class="skill-name">Premiere Pro</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-percent">0%</span></div>
+          <div class="skill-row" data-percent="90"><span class="skill-name">Illustrator</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-percent">0%</span></div>
+          <div class="skill-row" data-percent="98"><span class="skill-name">Canva</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-percent">0%</span></div>
+          <div class="skill-row" data-percent="88"><span class="skill-name">Figma</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-percent">0%</span></div>
+          <div class="skill-row" data-percent="75"><span class="skill-name">Blender</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-percent">0%</span></div>
+        </div>
+      </div>
+<div class="tab-panel" id="panel-education">
+
+  <div class="timeline">
+
+    <!-- Matriculation -->
+    <div class="timeline-item">
+
+      <span class="timeline-dot"></span>
+
+      <div class="timeline-content">
+
+        <span class="timeline-date">
+          2018 - 2019
+        </span>
+
+        <h4>
+          Matriculation
+        </h4>
+
+        <p>
+          <strong>DPS & College, Gogera Campus</strong>
+        </p>
+
+        <p>
+          DPS School empowers students with vital knowledge and skills,
+          preparing them for future success through a comprehensive
+          matriculation program.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- FSc -->
+    <div class="timeline-item">
+
+      <span class="timeline-dot"></span>
+
+      <div class="timeline-content">
+
+        <span class="timeline-date">
+          2020 - 2021
+        </span>
+
+        <h4>
+          FSc
+        </h4>
+
+        <p>
+          <strong>Aspire Group Of Colleges</strong>
+        </p>
+
+        <p>
+          Aspire College equips students with essential knowledge and
+          skills, preparing them for future success through a dynamic
+          academic program.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- BS in BBIT -->
+    <div class="timeline-item">
+
+      <span class="timeline-dot"></span>
+
+      <div class="timeline-content">
+
+        <span class="timeline-date">
+          2022 - 2026
+        </span>
+
+        <h4>
+          BS in BBIT
+        </h4>
+
+        <p>
+          <strong>Virtual University of Pakistan</strong>
+        </p>
+
+        <p>
+          Virtual University equips students with essential knowledge
+          and skills, preparing students for future success through
+          a robust online learning program.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- ================= REVIEWS ================= -->
+  <section id="reviews" class="section">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-center">Kind Words</span>
+      <h2>Client Reviews</h2>
+    </div>
+
+    <div class="reviews-grid">
+      <article class="glass-card review-card reveal">
+        <div class="card-glow"></div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Moiz redesigned our entire brand identity and the results speak for themselves. Fast, professional and genuinely talented."</p>
+        <div class="review-person">
+          <img src="https://i.pravatar.cc/80?img=12" alt="Portrait of Faizan Ahmad" loading="lazy">
+          <div><span class="review-name">Faizan Ahmad</span><span class="review-flag">🇵🇰 Pakistan</span></div>
+        </div>
+      </article>
+
+      <article class="glass-card review-card reveal">
+        <div class="card-glow"></div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Our YouTube channel's click-through rate jumped after Moiz took over our thumbnails. Sharp eye for what actually performs."</p>
+        <div class="review-person">
+          <img src="https://i.pravatar.cc/80?img=33" alt="Portrait of Shoaib Saleem" loading="lazy">
+          <div><span class="review-name">Shoaib Saleem</span><span class="review-flag">🇬🇧 United Kingdom</span></div>
+        </div>
+      </article>
+
+      <article class="glass-card review-card reveal">
+        <div class="card-glow"></div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Communicative, on time, and the marketing dashboard he built made our reporting meetings ten times easier."</p>
+        <div class="review-person">
+          <img src="https://i.pravatar.cc/80?img=51" alt="Portrait of Touseef Ahmad" loading="lazy">
+          <div><span class="review-name">Touseef Ahmad<span><span class="review-flag">🇺🇸 United States</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"><span></span></div>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-center">Get In Touch</span>
+      <h2>Let's Work Together</h2>
+    </div>
+
+    <div class="contact-grid reveal">
+      <a href="https://wa.me/923253248839?text=I%20impressed%20with%20your%20work.%20Please%20send%20me%20your%20portfolio."
+         target="_blank" rel="noopener" class="glass-card contact-card">
+        <div class="card-glow"></div>
+        <div class="contact-icon">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C9.4 4 4 9.4 4 16c0 2.2.6 4.3 1.7 6.1L4 28l6.1-1.6c1.7.9 3.7 1.4 5.9 1.4 6.6 0 12-5.4 12-12S22.6 4 16 4Z" stroke="url(#gradWA)" stroke-width="2"/><path d="M11.5 12.5c.4-1 1.2-1 1.6-.9.4.1.9 0 1.1.5.3.6.9 2 1 2.2.1.3 0 .5-.2.8-.2.3-.4.5-.6.7-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.5 1.4 1.2 2.5 1.6 2.9 1.7.4.2.7.1.9-.1.3-.3.7-.9 1-1.2.3-.3.5-.3.9-.2.4.2 2.1 1 2.4 1.2.3.2.5.3.6.4.1.3.1 1.2-.4 2.1-.5.9-2.1 1.7-3 1.7-1 0-2.9-.3-5.7-2.4-3.4-2.6-5.4-6-5.7-6.6-.2-.6-1.2-2-1.2-3.2 0-1.1.6-1.7.8-2Z" fill="url(#gradWA)"/><defs><linearGradient id="gradWA" x1="4" y1="4" x2="28" y2="28"><stop stop-color="#06B6D4"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs></svg>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>0325 3248839</p>
+        <span class="contact-cta">Message Now →</span>
+      </a>
+
+      <a href="mailto:semoizahmad@gmail.com" class="glass-card contact-card">
+        <div class="card-glow"></div>
+        <div class="contact-icon">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="7" width="24" height="18" rx="3" stroke="url(#gradMail)" stroke-width="2"/><path d="M5 9 L16 18 L27 9" stroke="url(#gradMail)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="gradMail" x1="4" y1="7" x2="28" y2="25"><stop stop-color="#8B5CF6"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs></svg>
+        </div>
+        <h3>Email</h3>
+        <p>semoizahmad@gmail.com</p>
+        <span class="contact-cta">Send Email →</span>
+      </a>
+    </div>
+
+    <div class="contact-final-cta reveal">
+      <a href="https://wa.me/923253248839?text=I%20impressed%20with%20your%20work.%20Please%20send%20me%20your%20portfolio."
+         target="_blank" rel="noopener" class="btn btn-primary btn-float ripple-btn">
+        <span>👍 Book a Meeting on WhatsApp</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="logo-mark small" aria-label="Back to top">
+      <span class="logo-ring"></span>
+      <span class="logo-glyph">MA</span>
+    </a>
+
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/zenflaremoiz" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+        <span>@zenflaremoiz</span>
+      </a>
+      <a href="https://tiktok.com/@zenflaremoiz" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 3c.6 2.6 2.4 4.4 5 4.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>@zenflaremoiz</span>
+      </a>
+      <a href="https://fiverr.com/gdmoizahmad" target="_blank" rel="noopener" aria-label="Fiverr">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M8 21V9.5A3.5 3.5 0 0 1 11.5 6H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 10h8M9 14h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Moiz Ahmad</span>
+      </a>
+    </div>
+
+    <p class="footer-copy">© 2026 Moiz Ahmad. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating action buttons -->
+<a href="https://wa.me/923253248839?text=I%20impressed%20with%20your%20work.%20Please%20send%20me%20your%20portfolio."
+   target="_blank" rel="noopener" class="fab fab-whatsapp" id="fabWhatsapp" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C9.4 4 4 9.4 4 16c0 2.2.6 4.3 1.7 6.1L4 28l6.1-1.6c1.7.9 3.7 1.4 5.9 1.4 6.6 0 12-5.4 12-12S22.6 4 16 4Z" fill="white" fill-opacity="0"/><path d="M16 4C9.4 4 4 9.4 4 16c0 2.2.6 4.3 1.7 6.1L4 28l6.1-1.6c1.7.9 3.7 1.4 5.9 1.4 6.6 0 12-5.4 12-12S22.6 4 16 4Z" stroke="white" stroke-width="2"/><path d="M11.5 12.5c.4-1 1.2-1 1.6-.9.4.1.9 0 1.1.5.3.6.9 2 1 2.2.1.3 0 .5-.2.8-.2.3-.4.5-.6.7-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.5 1.4 1.2 2.5 1.6 2.9 1.7.4.2.7.1.9-.1.3-.3.7-.9 1-1.2.3-.3.5-.3.9-.2.4.2 2.1 1 2.4 1.2.3.2.5.3.6.4.1.3.1 1.2-.4 2.1-.5.9-2.1 1.7-3 1.7-1 0-2.9-.3-5.7-2.4-3.4-2.6-5.4-6-5.7-6.6-.2-.6-1.2-2-1.2-3.2 0-1.1.6-1.7.8-2Z" fill="white"/></svg>
+</a>
+
+<button class="fab fab-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+
+/* ================================
+   PROJECTS GRID (extracted from index.html)
+================================= */
+
+  /* See All Projects Button - Center */
+.see-more-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#seeAllProjectsBtn {
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+  /* ================================
+     PROJECTS GRID
+  ================================= */
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  /* ================================
+     CUSTOM PROJECT IMAGE
+  ================================= */
+
+  .custom-project-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #111827;
+  }
+
+  .custom-project-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+
+  .project-card:hover .custom-project-image img {
+    transform: scale(1.05);
+  }
+
+  .custom-project-image .mockup-chip {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 5;
+  }
+
+  .project-body {
+    padding: 22px;
+  }
+
+  /* Extra projects hidden initially */
+  .extra-project {
+    display: none;
+  }
+
+  /* Show extra projects after button click */
+  .projects-grid.show-all .extra-project {
+    display: block;
+  }
+
+  .see-more-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  /* Tablet */
+  @media (max-width: 1050px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 650px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .custom-project-image {
+      height: 220px;
+    }
+  }
+
+
+/* ================================
+   ELEVENLABS AUDIO PLAYER (extracted from index.html)
+================================= */
+
+  /* =========================================
+     ELEVENLABS AUDIO PLAYER
+  ========================================= */
+
+  .eleven-audio-player {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 9px 13px 9px 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50px;
+
+    background: rgba(10, 15, 30, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+      0 8px 30px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    z-index: 10;
+
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+
+  .eleven-audio-player:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(99, 102, 241, 0.55);
+
+    box-shadow:
+      0 12px 35px rgba(0, 0, 0, 0.4),
+      0 0 25px rgba(99, 102, 241, 0.15);
+  }
+
+
+  /* =========================================
+     PLAY BUTTON
+  ========================================= */
+
+  .eleven-play-btn {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+      135deg,
+      #6366f1,
+      #8b5cf6
+    );
+
+    box-shadow:
+      0 5px 18px rgba(99, 102, 241, 0.35);
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+
+  .eleven-play-btn:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+      0 7px 24px rgba(99, 102, 241, 0.55);
+  }
+
+
+  .eleven-play-btn:active {
+    transform: scale(0.94);
+  }
+
+
+  /* PLAY ICON */
+
+  .eleven-play-icon {
+    width: 0;
+    height: 0;
+
+    margin-left: 3px;
+
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid white;
+  }
+
+
+  /* PAUSE ICON */
+
+  .eleven-pause-icon {
+    width: 12px;
+    height: 14px;
+
+    position: relative;
+  }
+
+
+  .eleven-pause-icon::before,
+  .eleven-pause-icon::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    width: 4px;
+    height: 14px;
+
+    border-radius: 2px;
+
+    background: white;
+  }
+
+
+  .eleven-pause-icon::before {
+    left: 0;
+  }
+
+
+  .eleven-pause-icon::after {
+    right: 0;
+  }
+
+
+  /* =========================================
+     PLAYER INFO
+  ========================================= */
+
+  .eleven-audio-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    min-width: 120px;
+  }
+
+
+  .eleven-audio-title {
+    font-size: 11px;
+    font-weight: 600;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    white-space: nowrap;
+  }
+
+
+  /* =========================================
+     PROGRESS BAR
+  ========================================= */
+
+  .eleven-progress {
+    position: relative;
+
+    width: 120px;
+    height: 4px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    cursor: pointer;
+  }
+
+
+  .eleven-progress-bar {
+    width: 0%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+      90deg,
+      #6366f1,
+      #06b6d4
+    );
+
+    transition: width 0.08s linear;
+  }
+
+
+  /* =========================================
+     TIME
+  ========================================= */
+
+  .eleven-audio-time {
+    font-size: 9px;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    white-space: nowrap;
+  }
+
+
+  /* =========================================
+     MOBILE
+  ========================================= */
+
+  @media (max-width: 650px) {
+
+    .eleven-audio-player {
+      left: 12px;
+      bottom: 12px;
+
+      padding: 7px 10px 7px 7px;
+
+      gap: 9px;
+    }
+
+
+    .eleven-play-btn {
+      width: 34px;
+      height: 34px;
+    }
+
+
+    .eleven-audio-info {
+      min-width: 100px;
+    }
+
+
+    .eleven-progress {
+      width: 100px;
+    }
+
+  }
+
+
